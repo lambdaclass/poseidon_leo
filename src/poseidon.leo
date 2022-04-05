@@ -1,4 +1,4 @@
-circuit PoseidonHash {
+circuit Poseidon {
     /*    
     Poseidon for fields
     Takes 2 fields as inputs and generates one output, 
@@ -32,9 +32,9 @@ circuit PoseidonHash {
         let state: [field;3] = [0,a_field,another_field];
 
         for i in 0..(n_rounds_f + n_rounds_p) {
-            state = Hash::ark(state, i*t);
-            state =  Hash::sbox(n_rounds_f, n_rounds_p, state, i);
-            state = Hash::mix(state);
+            state = Poseidon::ark(state, i*t);
+            state =  Poseidon::sbox(n_rounds_f, n_rounds_p, state, i);
+            state = Poseidon::mix(state);
         }
         return state[0];
     }
