@@ -1,1 +1,3 @@
-# poseidon_leo
+# Poseidon Leo
+
+Poseidon implementation for Leo
