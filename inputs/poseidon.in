@@ -1,0 +1,7 @@
+// The program input for poseidon/src/main.leo
+[main]
+a: field = 256;
+b: field = 42;
+
+[registers]
+r0: field = 0;
