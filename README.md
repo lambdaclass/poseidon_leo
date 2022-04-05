@@ -2,7 +2,7 @@
 
 Poseidon implementation for Leo
 
-Setted up to be used in binary merkle trees
+Set up to be used in binary merkle trees
 ## Usage
 
 `leo run`
