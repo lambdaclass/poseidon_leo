@@ -7,9 +7,11 @@ function main(a: field, b: field) -> field {
 
 @test
 function test_poseidon(){
-    let a: field = 0field;
-    let b: field = 1field;
+    let a: field = 1field;
+    let b: field = 2field;
     let hashed_values = Poseidon::poseidon_2_1(a,b);
-    console.log("Hash of 0 and 1 is: {}", hashed_values);
-    console.assert(hashed_values == 2639105915233064879132977646464381413026702528531824055574468181041108226391field);
+    console.log("Max number: {} ", 0field-1field);
+    console.log("Hash of 1 and 2 is: {}", hashed_values);
+    //Value validated with Rust implementation
+    console.assert(hashed_values == 6741600571531499538076626459614881881572634471432793830237600055083617801110field);
 }
